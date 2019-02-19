@@ -16,3 +16,9 @@ SMAC: This is a windows tool which is used to change your mac address however it
   here is that the networking service must be disabled first and must be enabled after the mac address is changed.
 
 Urlsnarf: This tool just grabs the urls browsed on a network and displays them on a not very easy to read format.
+
+Wwwstat: This tool summarizis WWW server (httpd) access statistics. It is basically used to display a pcap file in a nice format.
+  It works great with urlsnarf.
+
+Webspy: This tool gets the url’s from an attacked computer and opens it on the browser of a host computer. This tool could work in
+  an infinite loop and this feature of it can be used to perform a DOS attack.
