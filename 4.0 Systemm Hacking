@@ -1,0 +1,20 @@
+This is where the fun part begins. It includes ADS, LCP (Link Control Protocol), pwdump and sethc.
+
+ADS: Alternate Data Streams are used only in NTFS systems and are used to fork data to a file without changing its size or functionality.
+  These files will be hidden and won’t be shown in a dir terminal command. These files can be made like this on command prompt :-
+  notepad.exe Visible.txt:Hidden.txt
+  If the main file is deleted in future the ADS associated with it will drop itself. These data streams can be detected with some softwares such as ADS Spy.
+
+LCP: This is used to bruteforce the passwords of user accounts of any platform and can be downloaded from lcpsoft.com
+
+PWDUMP: This tool is used to dump the sam file on to the command prompt. The identifier 500 states that its the adminstrator account
+  and the identifier 501 states that its the guest account. This gives us the usernames and whether they are password protected or not.
+  SYNTAX $pwdump <hostname>
+
+SETHC.exe: This is actually a windows file that sits in C:\Windows\System32 and is activated as sticky keys. By changing any filename
+  to sethc.exe and copying it in C:\Windows\System32 I would be able to run it by simply pressing the sticky keys. This can even be used
+  while logging into the system without password.
+
+TELNET: This is a protocol used to get shell account of a system.
+
+Snow: This is a steganography tool on windows just as gpg on linux.
