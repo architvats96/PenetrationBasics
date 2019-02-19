@@ -1,4 +1,5 @@
-This technique is all about finding information about your target and the tools that we can use for it are nslookup, hping3 and whatweb.
+This technique is all about finding information about your target and the tools that we can use for it are nslookup, hping3 , whatweb
+  and sslscan.
 
 NSLOOKUP: Nslookup is a program to query Internet domain name servers about a target server. It gives two types of answers non 
   authoritative and authoritative. Non autoritative answers are provided by your domain name server and authoritative answers are 
@@ -13,3 +14,5 @@ HPING3: This is used to test whether a server is alive or dead. The point to be 
   
 Whatweb: WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics
   packages, JavaScript libraries,web servers, and embedded devices.
+  
+Sslscan: This is used to query a server on the encryption it is using.
