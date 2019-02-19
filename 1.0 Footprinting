@@ -1,0 +1,12 @@
+This technique is all about finding information about your target and the tools that we can use for it are nslookup and hping3.
+
+NSLOOKUP: Nslookup is a program to query Internet domain name servers about a target server. It gives two types of answers non 
+  authoritative and authoritative. Non autoritative answers are provided by your domain name server and authoritative answers are 
+  provided by someone other than you which may be a DNS on internet. Nslookup is used by typing nslookup in terminal and then the 
+  name of the server. The various modes that it offers can be set by $set type = <mode name>. The modes are a which is the default 
+  mode and gives the ip of server and its canonical name, mx which stands for the mail servers and soa (start of authority) which 
+  gives hosting name, mail address.
+
+HPING3: This is used to test whether a server is alive or dead. The point to be noted here is that hping3 sends TCP packets as 
+  defaults and this can be changed easily using its manual. The severs usually accepts a specific size of packets and this can be 
+  checked with hping3 and the packets can even be fragmented to bypass this and the packets will automatically merge at the server.
