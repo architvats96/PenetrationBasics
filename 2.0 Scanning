@@ -1,0 +1,33 @@
+This includes port scanning, vulnerability scanning, os fingerprinting. The tools used are nmap, hping3, dnsenum and nikto.
+
+DNSENUM: This tool gives a well expressed information about a host’s address, mail address, mail servers and zone transfers
+
+  It can be installed with this
+  apt-get update && \
+  apt-get install -y git && \
+  apt-get install -y build-essential && \
+  apt-get install -y cpanminus && \
+  git clone https://github.com/fwaeytens/dnsenum.git /home/dnsenum/ && \
+  chmod +x /home/dnsenum/dnsenum.pl && \
+  ln -s /home/dnsenum/dnsenum.pl /usr/bin/dnsenum && \
+  cpanm String::Random && \
+  cpanm Net::IP && \
+  cpanm Net::DNS && \
+  cpanm Net::Netmask && \
+  cpanm XML::Writer
+
+NMAP: This is a very handy tool to find open ports, os fingerprints and various other stuff about a server. It include various 
+  kinds of techniques such as full open scan, half open scan, xmas scan, fin scan, null/zombie scan, idle scan, icmpecho scan and udp scan.
+
+  TCP Full connect scan: $nmap -sT <server address>
+  Stealth scan: $nmap -sS <server address>
+  Operating system guess: $nmap -O <server address>
+  Xmas scan: $nmap -sX <server address>
+  Fin scan: $nmap -sF <server address>
+  Null scan: $nmap -sN <server address>
+  Ping scan: $nmap -P(S for syn, A for ack, U for UDP, Y for SCTP and E for ICMP echo <server address>
+
+  NOTE: Windows is pretty resistant to Xmas, Fin and Null scan
+  NOTE: IP address followed by /24 will scan the last bit with 1 through 256
+
+NIKTO: This tool is used to find vulnerabilities in a server and the syntax is $nikto -host <server address>
