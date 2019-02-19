@@ -1,0 +1,12 @@
+In this module we use softwares such as fport, icmpsrv & icmpsend, md5deep, netstat
+
+Fport: This is a windows program which reports all the running processes along with there process id, name, port and address
+  of execution.
+
+Icmpsrv & Icmpsend: These trojans are used to create a remote connection to a connected computer for shell commands and process.
+  How we use it is that we run icmpsrv on the target computer and icmpsrv on the host computer. Rest of the stuff will be self
+  explanatory once these steps are performed.
+
+MD5deep: This tool is used to calculate md5 hash of any file.
+
+Netstat: Print network connections, routing tables and interface statistics.
