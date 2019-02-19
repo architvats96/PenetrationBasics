@@ -1,0 +1,13 @@
+This is the last module which goes into reconnaissance of a server. It includes default usernames and passwords, the net command 
+which include a lot of subcommands, netdiscover and null session
+
+NETDISCOVER: This tool is used to check which ip’s are currently alive on a network and it also finds the MAC addresses concerning 
+  the IP address, syntax being $netdiscover -i <network interface>
+
+MACOF: This tool is used to generate traffic on a network.
+
+NULL SESSION: In this technique we make the pc think that we are the administrator and this can be done without username and password.
+  This technique works on older microsoft systems and can be performed as follows. Type net use and take a note of the ip address displayed. Then type net use \\<ip address>\IPC$ /u:”” “” Thats it and your privileges have been escalated. This takes use of a flaw in the Inter Process Control module of windows which is beyond my scope now.
+
+This is done a bit differently on linux. To do this on linux we use a tool called smbclient. SYNTAX is 
+  $smbclient -I <IP address> -L <hostname> -N -U
