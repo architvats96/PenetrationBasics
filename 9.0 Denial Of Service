@@ -1,0 +1,2 @@
+This is to make a server to revoke a particular service by sending lots of requests of it so that the server is not able to respond to all
+  of those and thus would have to reject some of them to make space for the fullfillment of others.
