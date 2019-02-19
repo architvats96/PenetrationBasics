@@ -1,0 +1,18 @@
+This module is all about sniffing and analyzing the traffic on a network which could contain some very useful information. 
+  The various tools used are macof, wireshark, tshark, driftnet, SMAC, urlsnarf, wwwstat and webspy.
+
+macof: This is a denial tool used to generate bogus traffic in a split second. Don’t try it on your own computer.
+
+Wireshark: Very handy tool to investigate all the incoming and outgoing traffic. Filters are used to filter the traffic and they
+  need not be remembered as they can be accessed with the expressions option. This tool provides a shitload of information which
+  needs to be taken care of by the tester.
+
+Tshark: This tool is very similar to wireshark and does the job on terminal itself. The protocols can be filtered using grep and
+  the entire packet framework can be seen by using tshark in verbose mode.
+
+Driftnet: This tool is used to sniff images and audio on a network but it actually doesn’t works so great.
+
+SMAC: This is a windows tool which is used to change your mac address however it can be done natively in linux. The thing to note
+  here is that the networking service must be disabled first and must be enabled after the mac address is changed.
+
+Urlsnarf: This tool just grabs the urls browsed on a network and displays them on a not very easy to read format.
